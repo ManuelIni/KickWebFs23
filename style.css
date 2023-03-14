@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
+
+
+
+/*////////////////////////////////////////////////////
+
+menu
+
+////////////////////////////////////////////////////*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+
+    position: absolute;
+
+    width: 80vw;
+    max-width: 566px;
+
+    height: 35vw;
+    max-height: 275px;
+
+    top: 200px;
+    
+    border: 1px solid black;
+}
+
+@media screen and(min-width: 769px) {
+    nav {
+        top: 20vh;
+    }
+}
+
+.boxRed {
+
+    display: flex;
+    justify-content: center;
+
+    align-self: flex-end;
+    width: 13vw;
+    max-width: 99px;
+    height: 33vw;
+    max-height: 259px;
+    background-color: #ec3c10;
+
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding: 0%;
+
+}
+
+.boxRed:hover .letterYellow {
+    display: none;
+}
+
+.boxRed:hover .letterYellowAlt {
+    display: block;
+}
+
+.boxYellow {
+
+    display: flex;
+    justify-content: center;
+
+    align-self: flex-start;
+
+    width: 13vw;
+    max-width: 99px;
+    height: 33vw;
+    max-height: 259px;
+    background-color: #f8e006;
+
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding: 0%;
+}
+
+.boxYellow:hover .letterRed {
+    display: none;
+}
+
+.boxYellow:hover .letterRedAlt {
+    display: block;
+}
+
+.letterRed {
+
+    font-family: 'Tinos', serif;
+    font-size: 42vw;
+
+    display: block;
+    position: relative;
+    top: -25%;
+    color: #ec3c10;
+    text-decoration: none;
+
+    text-shadow: 1vw 0.4vw 1px black;
+
+    -webkit-transform: scale(0.4, 1);
+    -moz-transform: scale(0.4, 1);
+    -ms-transform: scale(0.4, 1);
+    -o-transform: scale(0.4, 1);
+    transform: scale(0.4, 1);
+}
+
+.letterRedAlt {
+    font-family: 'Tinos', serif;
+    font-size: 3vw;
+
+    text-decoration: none;
+    color: #ec3c10;
+    text-shadow: 0.12vw 0.12vw 1px black;
+
+    writing-mode: vertical-lr;
+    text-orientation:upright;
+
+    letter-spacing: -20%;
+
+    display: none;
+    position: relative;
+    top: 6%;
+
+}
+
+.letterYellow {
+
+    font-family: 'Tinos', serif;
+    font-size: 42vw;
+
+    display: block;
+    position: relative;
+    top: -25%;
+    color: #f8e006;
+    text-decoration: none;
+
+    text-shadow: 1vw 0.4vw 1px black;
+
+    -webkit-transform: scale(0.4, 1);
+    -moz-transform: scale(0.4, 1);
+    -ms-transform: scale(0.4, 1);
+    -o-transform: scale(0.4, 1);
+    transform: scale(0.4, 1);
+}
+
+.letterYellowAlt {
+    font-family: 'Tinos', serif;
+    font-size: 3vw;
+
+    text-decoration: none;
+    color: #f8e006;
+    text-shadow: 0.12vw 0.12vw 1px black;
+
+    writing-mode: vertical-lr;
+    text-orientation:upright;
+
+    letter-spacing: -20%;
+
+    display: none;
+    position: relative;
+    top: 6%;
+
+}
+
+.the {
+    align-self: flex-end;
+
+    font-family: 'Tinos', serif;
+    font-size: 7vw;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    letter-spacing: 0.4em;
+
+    color: #fff;
+
+    padding-top: 1%;
+    padding-bottom: 0%;
+
+    margin: 0%;
+
+    background-color: #000;
+}
+
+@media screen and (min-width: 786px) {
+    
+    .letterRed {
+        font-size: 330px;
+    }
+
+    .letterYellow {
+        font-size: 330px;
+    }
+
+    .the {
+        font-size: 55px;
+    }
+}
+
+/*////////////////////////////////////////////////////
+
+general
+
+////////////////////////////////////////////////////*/
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 110vw;
+    height: 80vh;
+    
+    border: 2px solid green;
+    background-color: grey;
+    padding: 0%;
+    margin: 0%;
+}
+
+article {
+    display: block;
+
+    padding: 0%;
+    width: 320px;
+    
+    border: 1px solid black;
+}
+
+.column {
+    border: 1px solid white;
+    padding: 0% 4% 0% 4%;
+    width: 100%;
+}
+
+@media screen and (min-width: 786px) {
+
+    .container {
+        background: linear-gradient(to right, grey 80%, rgb(0,0,0,0) 20%);
+    }
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+    }
+
+    .column {
+        width: 40%;
+    }
+
+}
+
+
+
+
+
+
+/*////////////////////////////////////////////////////
+
+text
+
+////////////////////////////////////////////////////*/
+
+h1 {
+    display: block;
+    font-family: 'Tinos', serif;
+    font-size:4.5vw;
+
+    padding: 0 0 0% 0;
+    margin-top: 0%;
+    display: inline;
+    color: black;
+    text-align: center;
+
+    text-shadow: 0.3vw 0.2vw 1px rgb(241, 81, 12);
+}
+
+h1::after{
+    content: "\a";
+    white-space: pre;
+}
+
+p {
+    font-size: 0.7vw;
+    padding: 0%;
+    margin: 0%;
+    line-height: 95%;
+}
+
+.initial {
+    padding: 1.1rem 0;
+    margin: 0 .3rem 0 0;
+    font-size: 300%;
+    line-height: 1%;
+
+    float: left;
+}
+
+/*////////////////////////////////////////////////////
+
+boxes
+
+////////////////////////////////////////////////////*/
+
+.inlinebox-shadow {
+    display: inline-block;
+
+    border: 1px solid black;
+
+    height: fit-content;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 15%;
+    margin-top: 0%; 
+    background-color: #f9f1c9; 
+    color: black; 
+    box-shadow: 10px 10px 1px black;
+}
+
+@media screen and (min-width: 769px) {
+    .inlinebox-shadow {
+        width: 40%;
+    }
+}
+
+/*////////////////////////////////////////////////////
+
+CUSTREQ
+
+////////////////////////////////////////////////////*/
+
+#pink {
+    background-color: #f7c5c5;
+}
+
+#pinkleft {
+    background-color: #f7c5c5;
+}
+
+#rosa {
+    background-color: #d66a8f;
+}
+
+#orange {
+    background-color: #f2b456;
+}
+
+#green {
+    background-color: #0bb021;
+}
+
+#musicbox {
+    position:relative;
+    top:-44%;
+    left: 0%;
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    #pink {
+        background: linear-gradient(to left, #f7c5c5 80%, rgb(0,0,0,0) 20%);
+    }
+
+    #pinkleft {
+        background: linear-gradient(to right, #f7c5c5 80%, rgb(0,0,0,0) 20%);
+    }
+
+    #rosa {
+        background: linear-gradient(to right, #d66a8f 80%, rgb(0,0,0,0) 20%);
+    }
+
+    #orange {
+        background: linear-gradient(to right, #f2b456 80%, rgb(0,0,0,0) 20%);
+    }
+
+    #green {
+        background: linear-gradient(to left, #0bb021 80%, rgb(0,0,0,0) 20%);
+    }
+
+    #musicbox {
+        width: 240%;
+    }
+}
+
