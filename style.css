@@ -13,23 +13,16 @@ nav {
     justify-content: center;
     gap: 1.5vw;
 
-    position: absolute;
+    position: relative;
 
-    width: 80vw;
-    max-width: 566px;
+    width: 100vw;
 
     height: 35vw;
     max-height: 275px;
 
-    top: 200px;
+    margin: 6vh 0% 6vh 0%;
     
     border: 1px solid black;
-}
-
-@media screen and(min-width: 769px) {
-    nav {
-        top: 20vh;
-    }
 }
 
 .boxRed {
@@ -184,6 +177,10 @@ nav {
 
 @media screen and (min-width: 786px) {
     
+    nav {
+        width: 100vw;
+    }
+
     .letterRed {
         font-size: 330px;
     }
@@ -204,35 +201,50 @@ general
 ////////////////////////////////////////////////////*/
 
 body {
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0% 0% 0% 0%;
     overflow-x: hidden;
 }
+
+/*for debugging*/
+/*
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+*/
 
 .container {
     display: flex;
     justify-content: center;
-    width: 110vw;
-    height: 80vh;
+    width: 100vw;
+    height: fit-content;
     
     border: 2px solid green;
     background-color: grey;
-    padding: 0%;
+    padding: 0% 0% 2% 0%;
     margin: 0%;
 }
 
 article {
-    display: block;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70vw;
+    max-width: 722px;
     padding: 0%;
-    width: 320px;
-    
-    border: 1px solid black;
+
+    border: 1px solid red;
 }
 
 .column {
     border: 1px solid white;
-    padding: 0% 4% 0% 4%;
-    width: 100%;
+    width: 200px;
+    height: fit-content;
+    padding: 2%;
 }
 
 @media screen and (min-width: 786px) {
@@ -242,13 +254,13 @@ article {
     }
 
     article {
-        display: flex;
-        justify-content: space-between;
-        width: 50vw;
+        justify-content: left;
+        width: 60vw;
+        max-width: 2000px;
     }
 
     .column {
-        width: 40%;
+        width: 220px;
     }
 
 }
@@ -267,15 +279,14 @@ text
 h1 {
     display: block;
     font-family: 'Tinos', serif;
-    font-size:4.5vw;
-
-    padding: 0 0 0% 0;
-    margin-top: 0%;
-    display: inline;
+    font-size:32px;
     color: black;
     text-align: center;
 
-    text-shadow: 0.3vw 0.2vw 1px rgb(241, 81, 12);
+    padding: 0;
+    margin: 0% 0% 2% 0%;
+    
+    text-shadow: 4px 4px 1px rgb(241, 81, 12);
 }
 
 h1::after{
@@ -284,10 +295,11 @@ h1::after{
 }
 
 p {
-    font-size: 0.7vw;
+    font-size: 16px;
     padding: 0%;
     margin: 0%;
     line-height: 95%;
+    text-align: justify;
 }
 
 .initial {
@@ -299,6 +311,21 @@ p {
     float: left;
 }
 
+.indent {
+    text-indent: 10%;
+    float: right;
+}
+
+@media screen and (min-width: 789px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    
+}
 /*////////////////////////////////////////////////////
 
 boxes
