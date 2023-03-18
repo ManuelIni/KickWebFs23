@@ -98,12 +98,12 @@
                     The Y key has the same effect as
                     the positive gadget and the N key
                     has the samé effect as the negative
-                    gadget. You can also press the key corresponding to the first letterRedof the text in
+                    gadget. You can also press the key corresponding to the first letter of the text in
                     the desired gadget.
                 </p>
             </div>
-            <div class="column" style="flex: 2 0 400px;">
-                <img src="../img/LoadWorkbench.png" style="width:100%;" alt="a prompt to load the workbench">
+            <div class="column" style="display:flex; flex: 2 0 200px; justify-content: center;">
+                <img src="../img/LoadWorkbench.png" style="width:90%;" alt="a prompt to load the workbench">
             </div>
         </article>
     </div>
@@ -111,27 +111,128 @@
 
     <div class="container" style="margin-top: 10vh; background: none; height: auto;">
         <article style="justify-content: flex-end;">
-            <div class="inlinebox-shadow"></div>
+            <div class="inlinebox shadow" style="margin: 0%;">
+                <p>
+                    CUSTREQ is not public domain,
+                    but may be distributed freely. It
+                    is copyright 01990 Jonathan
+                    Potter. Bug reports and ideas to
+                    him at: <span style="font-style: italic;">P.O. Box 289, Goodwood,
+                        SA 5034, Australia.</span>
+                </p>
+            </div>
         </article>
     </div>
 
-    <div class="container" id="orange" style="height: 80vh; margin-top: 10vh;">
+    <div class="container" id="orange" style="height: auto; margin-top: 5vh; padding: 0%;">
         <article style="background-color: black; margin: 2%; display: block;">
             <div class="column"
-                style="width: 92%; height: auto; color: white; background-color: #f65f28; margin-bottom: 5%;">
-                a
+                style="width: 96%; height: auto; color: black; background-color: #f65f28; margin-bottom: 5%;">
+                <h2>Usage</h2>
             </div>
-            <article style="color: white;">
-                <div class="column">a</div>
-                <div class="column" style="background-color: #f65f28">a</div>
+            <article style="color: white; justify-content: center;">
+                <div class="column">
+                    <p>CUSTREQ is used in the following manner, assuming a continuous line:
+                    </p>
+                    <p class="indent" style="margin-bottom: 5%;">
+                        CustReq "hailtext" "text" "pos"
+                        -"neg" [-d default] [Ft timeout] [-x
+                        xpos] [-y ypos]
+                    </p>
+                    <p>
+                    <ul class="a">
+                        <li>hailtext - the title text of the custom requester.</li>
+                        <li>text - the main text of the custom requester.</li>
+                        <li>pos - the positive option of the custom requester.</li>
+                        <li>neg - the negative option of the custom requester.</li>
+                        <li>default - the optional default value.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="column" style="background-color: #f65f28">
+                    <h2 class="black">Example</h2>
+                    <p class="indent mono">
+                        CustReq "My Request" "Do you
+                        want to Ioad Workbench? |If you
+                        select Load, Workbench will be
+                        Ioaded. |If you select Don't Load,
+                        you will be|left With a CLI
+                        window." "Load" "Don't
+                        Ioad" -d 1 -t 5
+                        If WARN
+                        LoadWB
+                        Echo Workbench loaded"
+                    </p>
+                    <p class="mono">
+                        EndIf
+                    </p>
+                </div>
             </article>
         </article>
     </div>
 
-    <div class="container " id="green" style="margin-top: 40vh;">
-        <article>
-            <div class="column"></div>
-            <div class="column"></div>
+    <div class="container " id="green" style="margin-top: 40vh; color: white;">
+        <article class="startup">
+            <div class="column">
+                <p class="initial">S</p>
+                <p>
+                    TARTUP is a similar utility to
+                    Dneishe-Start on the
+                    Decernber 1989 cover disc. It does
+                    the same job, but in a more user-
+                    friendly and graphically pleasing
+                    way.
+                </p>
+                <p class="indent">
+                    It allows the use of different
+                    batch files so you can have the
+                    choice of custom startups for dif-
+                    ferent situations. I've used it this
+                    month to give you three choices,
+                    although you can have up to 10 if
+                    you like. My startup-sequence
+                    looks something like this:
+                </p>
+                <div class="inlinebox startup">
+                    <p>cls</p>
+                    <p>winsize 0 11 640 245</p>
+                    <p>run >nil: c:startup 00 3</p>
+                    <p>:0:Load Workbench</p>
+                    <p>:1:Play Sys</p>
+                    <p>:2:Play WordSeeker</p>
+                </div>
+                <p class="indent">
+                    Actually, the path to the Startup
+                    program on the cover disc is different than above, but I've
+                </p>
+            </div>
+            <div class="column startup">
+                <h1 class="startup">Startup v2.0</h1>
+            </div>
+            <div class="column">
+                <p>
+                    adjusted it to c:startup because
+                    that is where you should put the
+                    startup program in your C: direc-
+                    tory, The 99 is the timeout value,
+                    set it to between 5 and 99. If
+                    Startup Cloes time out (because the
+                    user sat staring at the screen
+                    instead of clicking a gadget) then
+                    the first batch file will be executed,
+                    in Other words s:Startup.(),
+                </p>
+                <p class="indent">
+                    From this you can probably
+                    work out that clicking on Choice 1
+                    executes s:Startup.1, clicking on
+                    choice 2 executes s:Startup,2, and
+                    so on up to s:Startup.9.
+                </p>
+                <p style="text-align: right;">
+                    By the way, I found that if I
+                </p>
+            </div>
         </article>
     </div>
 
