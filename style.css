@@ -21,7 +21,7 @@ nav {
     max-height: 275px;
 
     margin: 6vh 0% 6vh 0%;
-    
+
     border: 1px solid black;
 }
 
@@ -106,7 +106,7 @@ nav {
     text-shadow: 0.12vw 0.12vw 1px black;
 
     writing-mode: vertical-lr;
-    text-orientation:upright;
+    text-orientation: upright;
 
     letter-spacing: -20%;
 
@@ -145,7 +145,7 @@ nav {
     text-shadow: 0.12vw 0.12vw 1px black;
 
     writing-mode: vertical-lr;
-    text-orientation:upright;
+    text-orientation: upright;
 
     letter-spacing: -20%;
 
@@ -176,7 +176,7 @@ nav {
 }
 
 @media screen and (min-width: 786px) {
-    
+
     nav {
         width: 100vw;
     }
@@ -222,7 +222,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: fit-content;
-    
+
     border: 2px solid green;
     background-color: grey;
     padding: 0% 0% 2% 0%;
@@ -250,7 +250,7 @@ article {
 @media screen and (min-width: 786px) {
 
     .container {
-        background: linear-gradient(to right, grey 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to right, grey 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     article {
@@ -264,6 +264,7 @@ article {
     }
 
 }
+
 /*////////////////////////////////////////////////////
 
 text
@@ -273,17 +274,17 @@ text
 h1 {
     display: block;
     font-family: 'Tinos', serif;
-    font-size:32px;
+    font-size: 32px;
     color: black;
     text-align: center;
 
     padding: 0;
     margin: 0% 0% 2% 0%;
-    
+
     text-shadow: 4px 4px 1px rgb(241, 81, 12);
 }
 
-h1::after{
+h1::after {
     content: "\a";
     white-space: pre;
 }
@@ -343,8 +344,9 @@ ul.a {
     ul.a {
         font-size: 20px;
     }
-    
+
 }
+
 /*////////////////////////////////////////////////////
 
 boxes
@@ -368,9 +370,9 @@ boxes
 }
 
 .inlinebox.shadow {
-    margin-top: 0%; 
-    background-color: #f9f1c9; 
-    color: black; 
+    margin-top: 0%;
+    background-color: #f9f1c9;
+    color: black;
     box-shadow: 10px 10px 1px black;
 }
 
@@ -398,7 +400,7 @@ CUSTREQ
     background-color: #d66a8f;
 
     margin-top: 20vh;
-    height:auto;
+    height: auto;
 }
 
 #orange {
@@ -414,7 +416,7 @@ CUSTREQ
 }
 
 h2.black {
-    color:black;
+    color: black;
     font-size: 20px;
 }
 
@@ -445,7 +447,7 @@ h1.startup {
 article.startup {
     flex-direction: column;
     justify-content: start;
-    align-content:center;
+    align-content: center;
     align-items: center;
     flex-wrap: nowrap;
     height: fit-content;
@@ -477,7 +479,7 @@ article.nopal {
     width: 50%;
     right: 0%;
     align-self: start;
-    color:white;
+    color: white;
     background-color: #f65f28;
 }
 
@@ -493,8 +495,8 @@ article.musicbox {
 }
 
 .column.codeclinic {
-    background: linear-gradient(to top ,#09507d 90%, rgb(0,0,0,0) 10%);
-    color:white;
+    background: linear-gradient(to top, #09507d 90%, rgb(0, 0, 0, 0) 10%);
+    color: white;
 }
 
 #codeclinic {
@@ -504,23 +506,23 @@ article.musicbox {
 
 @media screen and (min-width: 769px) {
     #pink {
-        background: linear-gradient(to left, #f7c5c5 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to left, #f7c5c5 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     #pinkleft {
-        background: linear-gradient(to right, #f7c5c5 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to right, #f7c5c5 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     #rosa {
-        background: linear-gradient(to right, #d66a8f 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to right, #d66a8f 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     #orange {
-        background: linear-gradient(to right, #f2b456 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to right, #f2b456 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     #green {
-        background: linear-gradient(to left, #0aa14f 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to left, #0aa14f 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     #musicbox {
@@ -566,12 +568,40 @@ SYS
 #lightorange {
     background-color: #f1cf9f;
 }
+
 #blue {
+    margin-top: 10vh;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     background-color: #5fc7db;
 }
 
+#greenchaos {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0aa14f;
+    margin-top: 60vh;
+}
+
 #sys {
-    justify-content: right;
+    justify-content: center;
+}
+
+#syscolumn {
+    position: relative;
+    order: 1
+}
+
+#imgsys1 {
+    position: static;
+    width: 100%;
+}
+
+#imgsys2 {
+    position: static;
+    width: 100%;
 }
 
 h1#sysheader {
@@ -581,13 +611,106 @@ h1#sysheader {
     margin-bottom: 10%;
 }
 
+#controls {
+    margin-top: 5vh;
+    height: 15vh;
+    justify-content: center;
+}
+
+.column.controls {
+    background-color: #f4692b;
+    color: white
+}
+
+#controlsheader {
+    color: white;
+    margin-bottom: 10%;
+}
+
+img#chaosimg {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+}
+
+img#workbench {
+    position: relative;
+    top: -5vh;
+    width: 100%;
+}
+
+h1#megawb {
+    padding: 0%;
+    margin-top: 0%;
+    color: #292758;
+    text-shadow: 4px 4px 1px black;
+    font-size: 64px;
+}
+
+
 @media screen and (min-width: 769px) {
     #lightorange {
-        background: linear-gradient(to right, #f1cf9f 80%, rgb(0,0,0,0) 20%);
+        background: linear-gradient(to right, #f1cf9f 80%, rgb(0, 0, 0, 0) 20%);
+    }
+
+    #blue {
+        position: relative;
+        margin-top: 50vh;
+        background: linear-gradient(to left, #5fc7db 80%, rgb(0, 0, 0, 0) 20%);
     }
     
-    #blue {
-        background: linear-gradient(to left, #5fc7db 80%, rgb(0,0,0,0) 20%);
-
+    #greenchaos {
+        align-items: center;
+        background: linear-gradient(to left, #0aa14f 80%, rgb(0, 0, 0, 0) 20%);
+        margin-top: 60vh;
     }
-}
+    #sys {
+        justify-content: right;
+    }
+
+    #syscolumn {
+        order: -1;
+    }
+
+    #imgsys1 {
+        position: absolute;
+        top: 0%;
+        right: 40%;
+        width: 200%;
+    }
+
+    #imgsys2 {
+        position: absolute;
+        top: 32vh;
+        right: 10%;
+        width: 200%;
+    }
+
+    #controls {
+        margin-top: 20vh;
+        justify-content: start;
+    }
+
+    h1#chaos {
+        font-size: 64px;
+        color: white;
+        text-shadow: 4px 4px 1px #e95a2d;
+    }
+
+    img#chaosimg {
+        position: relative;
+        width: 200%;
+    }
+
+    img#workbench {
+        position: absolute;
+        top: -40vh;
+        width: 50vw;
+    }
+
+    h1#megawb {
+        margin-top: 15vh;
+        text-shadow: 8px 8px 1px black;
+        font-size: 128px;
+    }
+}  

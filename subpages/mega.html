@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>MEGA</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
     <nav>
         <h2 class="the">THE</h2>
@@ -29,8 +31,9 @@
 
     <div class="container" id="lightorange">
         <article id="sys">
-            <div class="column">
-                
+            <div class="column" id="syscolumn">
+                <img src="../img/Sys1.png" id="imgsys2" alt="a screenshot of the game sys">
+                <img src="../img/Sys1.png" id="imgsys1" alt="a screenshot of the game sys">
             </div>
             <div class="column">
                 <h1 id="sysheader">SYS</h1>
@@ -46,22 +49,130 @@
                     may also kill vou. It is important
                     that you are fast and kill them all
                     before they start to destroy your
-                    3,5in discs.</p>
+                    3,5in discs.
+                </p>
+            </div>
+        </article>
+    </div>
+    <div class="container" id="lightorange">
+        <article id="controls">
+            <div class="column controls">
+                <h2 id="controlsheader">Controls</h2>
+                <p>Up - numeric pad 8</p>
+                <p>Right - numeric pad 6</p>
+                <p>Down - numeric pad 2</p>
+                <p>Left - numeric pad 4</p>
+                <p>Stop - numeric pad 5</p>
+                <p>Kick - spacebar</p>
+                <ul style="margin-bottom: 8%;">
+                    <li>Or use a joystick in port two</li>
+                    <li>F1 will make you go continuously without stopping all the time</li>
+                    <li>F2 will stop you after every step</li>
+                    <li>F6 turns the music on</li>
+                    <li>f7 turns the music off</li>
+                    <li>F10 should only be used by experienced players. It will allow you to start on level
+                        10. Your score will be cleared and your lives will be reset</li>
+                    <li>When you have lost a life, press Kick to continue</li>
+                </ul>
             </div>
         </article>
     </div>
 
-    <div class="container" style="margin-top: 20vh;">
-
+    <div class="container" id="greenchaos">
+        <article style="justify-content: flex-end; position: relative; top: -10vh;">
+            <div class="inlinebox shadow" style="margin: 0%;">
+                <p>
+                    SYS is copyright 01989 Anders
+                    Bjerin and was written as an exercise in programming the Amiga. It
+                    took him about seven weeks to
+                    finish, and another week to debug
+                    and check. If you find any bugs or
+                    you have suggestions for the next
+                    version, please write to Anders at:
+                    <span style="font-style: italic;">Tulevdagen 22, 181 41 Lidingo,
+                        Sweden.</span>
+                </p>
+            </div>
+        </article>
+        <article>
+            <article style=" background-color: black; display: block;">
+                <div class="column"
+                    style="width: 96%; height: auto; color: black; background-color: #f65f28; margin-bottom: 5%; color:white">
+                    <h2>File tips</h2>
+                </div>
+                <article style="color: white; justify-content: center;">
+                    <div class="column">
+                        <p>SYS will look in the current
+                            directory for all the files when
+                            you start the program.
+                        </p>
+                        <p class="indent">If it can't find
+                            SYS HighScore.dat it will try to
+                            create a new high score table.
+                        </p>
+                        <p class="indent">If the disc is write protected,
+                            SYS will ask you to un-protect it.
+                            Ifyou do not want the program to
+                            create a new high score table,
+                            Click Cancel in the system
+                            requester, otherwise write enable
+                            the disc and Click Retry.
+                        </p>
+                        <p>The same procedure will be</p>
+                    </div>
+                    <div class="column">
+                        <p>repeated when you quit the pro-
+                            gram and SYS tries to update the
+                            high score table.
+                        </p>
+                        <p class="indent">If SYS can't find any or all of
+                            the seven sound files when the
+                            program Ioads, it will continue to
+                            Ioad the Other files and will not
+                            use that sound or those sounds.
+                        </p>
+                        <p class="indent">If you don't like the sound
+                            effects, erase the SYS Sound#?
+                            files and SYS will not allocate
+                            any space for them. Very useful if
+                            you don't have much ram and
+                            want to multi-task.
+                        </p>
+                    </div>
+                </article>
+            </article>
+            <article style="margin-top: 10vh;">
+                <div class="column" style="color: white;">
+                    <h1 id="chaos">Chaos</h1>
+                    <p class="initial">I</p>
+                    <p>N the Chaos drawer vou'll
+                        find three of the tour listings
+                        featured in this month's article,
+                        Whose life is it anyway?, each
+                        compiled With HiSoft Basic
+                        Compiler.
+                    </p>
+                    <p> Listing II, The Logistic Equation, is not on the disc
+                        because HiSoft Basic Compiler
+                        seems to have a problem '«Vith the
+                        SOUND command; it appears not
+                        to work correctly.</p>
+                </div>
+                <div class="column" style="position: relative;">
+                    <img src="../img/predator.png" id="chaosimg" alt="a screenshot of predator">
+                </div>
+            </article>
     </div>
 
-    <div class="container" id="green" style="margin-top: 20vh;">
-
-    </div>
-
-    <div class="container" id="blue" style="margin-top: 20vh;">
+    <div class="container" id="blue"">
+        <article>
+            <img src="../img/Megawb.png" id="workbench" alt="megawb">
+            <h1 id="megawb">Mega WB</h1>
+        </article>
+        <article></article>
 
     </div>
 
 </body>
+
 </html>
