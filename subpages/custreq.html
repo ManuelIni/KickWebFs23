@@ -18,8 +18,8 @@
             <a class="letterRedAlt" href="index.html">MENU</a>
         </div>
         <div class="boxRed">
-            <a class="letterYellow" href="subpages/page1.html">I</a>
-            <a class="letterYellowAlt" href="subpages/page1.html">MEGA</a>
+            <a class="letterYellow" href="mega.html">I</a>
+            <a class="letterYellowAlt" href="mega.html">MEGA</a>
         </div>
         <div class="boxYellow" style="top: 15%">
             <a class="letterRed" href="subpages/page2.html">S</a>
@@ -108,70 +108,69 @@
         </article>
     </div>
 
-
-    <div class="container" style="margin-top: 10vh; background: none; height: auto;">
-        <article style="justify-content: flex-end;">
-            <div class="inlinebox shadow" style="margin: 0%;">
-                <p>
-                    CUSTREQ is not public domain,
-                    but may be distributed freely. It
-                    is copyright 01990 Jonathan
-                    Potter. Bug reports and ideas to
-                    him at: <span style="font-style: italic;">P.O. Box 289, Goodwood,
-                        SA 5034, Australia.</span>
-                </p>
-            </div>
-        </article>
-    </div>
-
-    <div class="container" id="orange" style="height: auto; margin-top: 5vh; padding: 0%;">
-        <article style="background-color: black; margin: 2%; display: block;">
-            <div class="column"
-                style="width: 96%; height: auto; color: black; background-color: #f65f28; margin-bottom: 5%;">
-                <h2>Usage</h2>
-            </div>
-            <article style="color: white; justify-content: center;">
-                <div class="column">
-                    <p>CUSTREQ is used in the following manner, assuming a continuous line:
-                    </p>
-                    <p class="indent" style="margin-bottom: 5%;">
-                        CustReq "hailtext" "text" "pos"
-                        -"neg" [-d default] [Ft timeout] [-x
-                        xpos] [-y ypos]
-                    </p>
+    <div class="container" id="orange" style="height: auto; margin-top: 20vh; padding: 0%;">
+        <div>
+            <article style="justify-content: flex-end; position: relative; top: -10vh;">
+                <div class="inlinebox shadow" style="margin: 0%;">
                     <p>
-                    <ul class="a">
-                        <li>hailtext - the title text of the custom requester.</li>
-                        <li>text - the main text of the custom requester.</li>
-                        <li>pos - the positive option of the custom requester.</li>
-                        <li>neg - the negative option of the custom requester.</li>
-                        <li>default - the optional default value.</li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="column" style="background-color: #f65f28">
-                    <h2 class="black">Example</h2>
-                    <p class="indent mono">
-                        CustReq "My Request" "Do you
-                        want to Ioad Workbench? |If you
-                        select Load, Workbench will be
-                        Ioaded. |If you select Don't Load,
-                        you will be|left With a CLI
-                        window." "Load" "Don't
-                        Ioad" -d 1 -t 5
-                        If WARN
-                        LoadWB
-                        Echo Workbench loaded"
-                    </p>
-                    <p class="mono">
-                        EndIf
+                        CUSTREQ is not public domain,
+                        but may be distributed freely. It
+                        is copyright 01990 Jonathan
+                        Potter. Bug reports and ideas to
+                        him at: <span style="font-style: italic;">P.O. Box 289, Goodwood,
+                            SA 5034, Australia.</span>
                     </p>
                 </div>
             </article>
-        </article>
+            <article style="background-color: black; margin: 2%; display: block;">
+                <div class="column"
+                    style="width: 96%; height: auto; color: black; background-color: #f65f28; margin-bottom: 5%;">
+                    <h2>Usage</h2>
+                </div>
+                <article style="color: white; justify-content: center;">
+                    <div class="column">
+                        <p>CUSTREQ is used in the following manner, assuming a continuous line:
+                        </p>
+                        <p class="indent" style="margin-bottom: 5%;">
+                            CustReq "hailtext" "text" "pos"
+                            -"neg" [-d default] [Ft timeout] [-x
+                            xpos] [-y ypos]
+                        </p>
+                        <p>
+                        <ul class="a">
+                            <li>hailtext - the title text of the custom requester.</li>
+                            <li>text - the main text of the custom requester.</li>
+                            <li>pos - the positive option of the custom requester.</li>
+                            <li>neg - the negative option of the custom requester.</li>
+                            <li>default - the optional default value.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="column" style="background-color: #f65f28">
+                        <h2 class="black">Example</h2>
+                        <p class="indent mono">
+                            CustReq "My Request" "Do you
+                            want to Ioad Workbench? |If you
+                            select Load, Workbench will be
+                            Ioaded. |If you select Don't Load,
+                            you will be|left With a CLI
+                            window." "Load" "Don't
+                            Ioad" -d 1 -t 5
+                            If WARN
+                            LoadWB
+                            Echo Workbench loaded"
+                        </p>
+                        <p class="mono">
+                            EndIf
+                        </p>
+                    </div>
+                </article>
+            </article>
+    
+        </div>
     </div>
 
-    <div class="container " id="green" style="margin-top: 40vh; color: white;">
+    <div class="container " id="green" style="margin-top: 20vh; color: white; z-index: 100;">
         <article class="startup">
             <div class="column">
                 <p class="initial">S</p>
@@ -238,8 +237,8 @@
 
 
 
-    <div class="container " id="pinkleft" style="margin-top: 20vh;">
-        <article class="nopal">
+    <div class="container " id="pinkleft" style="position: relative; top: -20vh; margin-top: 0vh; height: 40vh; z-index: -100;">
+        <article class="nopal" style="position:relative; margin-top: 30vh;">
             <div class="column nopal">
                 <div class="column">
                     <h1 class="nopal">NoPal</h1>
@@ -261,23 +260,123 @@
         </article>
     </div>
 
-    <div class="container" id="rosa" style="margin-top: 20vh; height:auto;">
-        <article>
-            <div class="column" style="position: relative;">
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </div>
-            <div class="column">
-                <img src="../img/MusicBox.png" id="musicbox" alt="the musicbox interface">
-            </div>
+    <div class="container" id="rosa">
+        <article class="musicbox">
+            <h1 class="musicbox">MusicBox 1.8</h1>
+            <article>
+                <div class="column" style="position: relative;">
+                    <p class="initial">H</p>
+                    <p>ERE we go With another
+                        MusicBox upgrade. Since
+                        vl.4 there have been a fair number
+                        of changes, the two most impor-
+                        tant being compatibility With files
+                        compressed With PowerPacker
+                        (October 1989 cover disc) and a
+                        change in the number of songs
+                        MusicBox can handle.</p>
+                        <p class="indent">
+                            The biggest song selection num-
+                            ber has been increased from 9 to
+                            99. So it is now possible for
+                            MusicBox to choose from 100 dif-
+                            ferent songs.
+                        </p>
+                        <p class="indent">
+                            The SoundFX files that
+                            MusicBox plays may now be com-
+                            pressed using Nico Francois'
+                            PowerPacker in Data File mode.
+                            This feature is provided thanks to
+                            Nico's publication of the PPData
+                            source code.
+                        </p>
+                        <p class="indent">
+                            The song file on this month's
+                            disc has been compressed using
+                            this method. Remember, while compressed songs may include
+                        </p>
+                </div>
+                <div class="column">
+                    <p>
+                        the SoundFX executable header, they
+                        must be crunched using Data File
+                        mode.
+                    </p>
+                    <p class="indent">
+                        The compression technique used
+                        by PowerPacker usually results in a
+                        20 to 40 per cent reduction in file
+                        Size.
+                    </p>
+                    <p class="indent">
+                        Decompression takes time — about
+                        one second per 50,000 bytes. If you
+                        can wait a second or so between
+                        songs, this is the way to go, espe-
+                        cially if you are running from
+                        flo
+                        disc.
+                    </p>
+                    <p class="indent">
+                        If you're new to MusicBox and
+                        want to know more about it, double
+                        Click on the MusicBox.DOC icon in
+                        the MusicBox drawer.
+                    </p>
+                    <p class="indent">
+                        This month's tune is a brilliant
+                        rendition of two intermingled space
+                        fantasy themes. The first is a well
+                        known march as you have never
+                        heard it before, The second I seem
+                        to recognise as the theme from an
+                        epic film. Anyone know its proper
+                        title?
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="../img/MusicBox.png" id="musicbox" alt="the musicbox interface">
+                    <div class="inlinebox shadow" style="width: 90%; margin-top: 10%;">
+                        MUSICBOX is freeware but
+                        remains copyright 01989-90
+                        Peter L. Dunlap. This program
+                        distributed courtesy of CMOS
+                        BBS (0101- 303-322-4078).</div>
+                </div>
+            </article>
+    
         </article>
     </div>
-    <div class="container" id="rosa" style="margin-top: 0;">
+    <div class="container" id="rosa" style="margin-top: 0; height: 20vh;">
         <article>
-            <div class="column" style="position: relative;">
-
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </div>
-            <div class="column">
+            <div class="column codeclinic">
+                <img src="../img/CodeClinic.png" id="codeclinic" alt="the code clinic">
+                <p class="initial">T<p>
+                <p>
+                    HIS drawer will be a regu-
+                    lar feature on the disc from
+                    now on and will contain the main
+                    source listings from the The Code
+                    Clinic articles.
+                </p>
+                <p class="indent">
+                    Double Click the icons to read
+                    the listings. They are all saved in
+                    pure Ascii format, so you can
+                    Ioad them straight into your
+                    favourite program editors.
+                </p>
+                <p class="indent">
+                    Listing I is example machine
+                    code source to display five bit-
+                    planes, Listing 11 is additional
+                    source to dispose of on-screen
+                    garbage, and Listing
+                    V is Michael Bassett's small piece
+                    of code that releases ram grabbed
+                    by the GVP hard drive.
+                </p>
             </div>
         </article>
     </div>

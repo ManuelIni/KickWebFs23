@@ -396,6 +396,9 @@ CUSTREQ
 
 #rosa {
     background-color: #d66a8f;
+
+    margin-top: 20vh;
+    height:auto;
 }
 
 #orange {
@@ -407,9 +410,6 @@ CUSTREQ
 }
 
 #musicbox {
-    position:relative;
-    top:-44%;
-    left: 0%;
     width: 100%;
 }
 
@@ -448,7 +448,7 @@ article.startup {
     align-content:center;
     align-items: center;
     flex-wrap: nowrap;
-    height: 90vh;
+    height: fit-content;
 }
 
 .column.startup {
@@ -461,11 +461,12 @@ h1.nopal {
 }
 
 article.nopal {
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 1%;
+
 }
 
 .column.nopal {
@@ -480,6 +481,25 @@ article.nopal {
     background-color: #f65f28;
 }
 
+h1.musicbox {
+    color: #09507d;
+    text-shadow: 4px 4px 1px white;
+    text-align: center;
+}
+
+article.musicbox {
+    flex-direction: column;
+    align-items: start;
+}
+
+.column.codeclinic {
+    background: linear-gradient(to top ,#09507d 90%, rgb(0,0,0,0) 10%);
+    color:white;
+}
+
+#codeclinic {
+    width: 100%;
+}
 
 
 @media screen and (min-width: 769px) {
@@ -518,11 +538,56 @@ article.nopal {
     article.startup {
         flex-wrap: wrap;
         align-content: start;
-        height: 70vh;
+        height: 75vh;
     }
 
     .column.startup {
         order: 0;
     }
+
+    article.nopal {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    h1.musicbox {
+        text-align: left;
+    }
 }
 
+
+/*////////////////////////////////////////////////////
+
+SYS
+
+////////////////////////////////////////////////////*/
+
+#lightorange {
+    background-color: #f1cf9f;
+}
+#blue {
+    background-color: #5fc7db;
+}
+
+#sys {
+    justify-content: right;
+}
+
+h1#sysheader {
+    font-size: 112px;
+    color: #e75c2f;
+    text-shadow: 4px 4px 1px black;
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width: 769px) {
+    #lightorange {
+        background: linear-gradient(to right, #f1cf9f 80%, rgb(0,0,0,0) 20%);
+    }
+    
+    #blue {
+        background: linear-gradient(to left, #5fc7db 80%, rgb(0,0,0,0) 20%);
+
+    }
+}
