@@ -1,0 +1,163 @@
+/*////////////////////////////////////////////////////
+
+menu
+
+////////////////////////////////////////////////////*/
+
+/* Mobile */
+
+nav {
+    position: sticky;
+    top: -95vh;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+
+    position: sticky;
+
+    width: 100vw;
+
+    margin: 0 0% 6vh 0%;
+    padding: 0%;
+
+    border: 1px solid black;
+
+    z-index: 200;
+}
+
+
+.letterBox {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 48vw;
+    height: 46vh;
+    background-color: #ec3c10;
+
+    margin: 1%;
+    padding: 0%;
+
+}
+
+.letterBox#D {
+    background-color: #f8e006;
+}
+
+.letterBox#I {
+    background-color: #ec3c10;
+}
+
+.letterBox#S {
+    background-color: #ec3c10;
+}
+
+.letterBox#C {
+    background-color: #f8e006;
+}
+
+/* hover */
+
+
+
+.letter {
+
+    font-family: 'Tinos', serif;
+    font-size: 40vh;
+
+    display: block;
+    position: relative;
+    top: -2%;
+    color: #ec3c10;
+    text-decoration: none;
+
+    text-shadow: 20px 10px 1px black;
+
+    -webkit-transform: scale(0.4, 1);
+    -moz-transform: scale(0.4, 1);
+    -ms-transform: scale(0.4, 1);
+    -o-transform: scale(0.4, 1);
+    transform: scale(0.4, 1);
+}
+
+.letter#D {
+    color: #ec3c10;
+}
+
+.letter#I {
+    color: #f8e006;
+}
+
+.letter#S {
+    color: #f8e006;
+}
+
+.letter#C {
+    color: #ec3c10;
+}
+
+
+.letter.yellow {
+    color: #f8e006;
+}
+
+.letterAlt {
+    font-family: 'Tinos', serif;
+    font-size: 3vw;
+
+    text-decoration: none;
+    color: #ec3c10;
+    text-shadow: 0.12vw 0.12vw 1px black;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    letter-spacing: -20%;
+
+    display: none;
+    position: relative;
+    top: 6%;
+
+}
+
+.letterAlt.yellow {
+    color: #f8e006;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 769px) {
+    
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    .letterBox {
+        height: 96vh;
+        width: 23vw;
+    }
+
+    .letterBox#S {
+        background-color: #f8e006;
+    }
+    
+    .letterBox#C {
+        background-color: #ec3c10;
+    }
+
+    .letter {
+        top: -10%;
+        font-size: 100vh;
+    }
+
+    .letter#S {
+        color: #ec3c10;
+    }
+    
+    .letter#C {
+        color: #f8e006;
+    }
+}

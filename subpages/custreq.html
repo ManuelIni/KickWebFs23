@@ -10,28 +10,23 @@
 </head>
 
 <body>
-
     <nav>
-        <h2 class="the">THE</h2>
-        <div class="boxYellow" style="top: 15%">
-            <a class="letterRed" href="index.html">D</a>
-            <a class="letterRedAlt" href="index.html">MENU</a>
-        </div>
-        <div class="boxRed">
-            <a class="letterYellow" href="mega.html">I</a>
-            <a class="letterYellowAlt" href="mega.html">MEGA</a>
-        </div>
-        <div class="boxYellow" style="top: 15%">
-            <a class="letterRed" href="subpages/page2.html">S</a>
-            <a class="letterRedAlt" href="subpages/page2.html">CODE</a>
-        </div>
-        <div class="boxRed">
-            <a class="letterYellow" href="ueb.html">C</a>
-            <a class="letterYellowAlt" href="index.html">MENU</a>
+            <div class="letterBox" id="D">
+                <a class="letter" id="D" href="../index.html">D</a>
+            </div>
+            <div class="letterBox" id="I">
+                <a class="letter" id="I" href="mega.html">I</a>
+            </div>
+            <div class="letterBox" id="S">
+                <a class="letter" id="S" href="custreq.html">S</a>
+            </div>
+            <div class="letterBox" id="C">
+                <a class="letter" id="C" href="../index.html">C</a>
+            </div>
     </nav>
 
 
-    <div class="container" id="pink" style="height: fit-content; flex-direction: row-reverse;">
+    <div class="container" id="pink" style="height: fit-content; flex-direction: row-reverse; margin-top: 20vh;">
         <article>
             <div class="column">
                 <h1>CustReq</h1>
@@ -109,20 +104,23 @@
     </div>
 
     <div class="container" id="orange" style="height: auto; margin-top: 20vh; padding: 0%;">
-        <div>
-            <article style="justify-content: flex-end; position: relative; top: -10vh;">
-                <div class="inlinebox shadow" style="margin: 0%;">
-                    <p>
-                        CUSTREQ is not public domain,
-                        but may be distributed freely. It
-                        is copyright 01990 Jonathan
-                        Potter. Bug reports and ideas to
-                        him at: <span style="font-style: italic;">P.O. Box 289, Goodwood,
-                            SA 5034, Australia.</span>
-                    </p>
-                </div>
-            </article>
-            <article style="background-color: black; margin: 2%; display: block;">
+        <article style="justify-content: flex-end; position: relative; top: -10vh;">
+            <div class="inlinebox shadow" style="margin: 0%;">
+                <p>
+                    CUSTREQ is not public domain,
+                    but may be distributed freely. It
+                    is copyright 01990 Jonathan
+                    Potter. Bug reports and ideas to
+                    him at: <span style="font-style: italic;">P.O. Box 289, Goodwood,
+                        SA 5034, Australia.</span>
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <div class="container" id="orange" style="justify-content: center;">
+        <article id="usageContainer">
+            <article id="usage">
                 <div class="column"
                     style="width: 96%; height: auto; color: black; background-color: #f65f28; margin-bottom: 5%;">
                     <h2>Usage</h2>
@@ -166,8 +164,8 @@
                     </div>
                 </article>
             </article>
-    
-        </div>
+        </article>
+
     </div>
 
     <div class="container " id="green" style="margin-top: 20vh; color: white; z-index: 100;">
@@ -237,7 +235,8 @@
 
 
 
-    <div class="container " id="pinkleft" style="position: relative; top: -20vh; margin-top: 0vh; height: 40vh; z-index: -100;">
+    <div class="container " id="pinkleft"
+        style="position: relative; top: -20vh; margin-top: 0vh; height: 40vh; z-index: -100;">
         <article class="nopal" style="position:relative; margin-top: 30vh;">
             <div class="column nopal">
                 <div class="column">
@@ -275,27 +274,27 @@
                         (October 1989 cover disc) and a
                         change in the number of songs
                         MusicBox can handle.</p>
-                        <p class="indent">
-                            The biggest song selection num-
-                            ber has been increased from 9 to
-                            99. So it is now possible for
-                            MusicBox to choose from 100 dif-
-                            ferent songs.
-                        </p>
-                        <p class="indent">
-                            The SoundFX files that
-                            MusicBox plays may now be com-
-                            pressed using Nico Francois'
-                            PowerPacker in Data File mode.
-                            This feature is provided thanks to
-                            Nico's publication of the PPData
-                            source code.
-                        </p>
-                        <p class="indent">
-                            The song file on this month's
-                            disc has been compressed using
-                            this method. Remember, while compressed songs may include
-                        </p>
+                    <p class="indent">
+                        The biggest song selection num-
+                        ber has been increased from 9 to
+                        99. So it is now possible for
+                        MusicBox to choose from 100 dif-
+                        ferent songs.
+                    </p>
+                    <p class="indent">
+                        The SoundFX files that
+                        MusicBox plays may now be com-
+                        pressed using Nico Francois'
+                        PowerPacker in Data File mode.
+                        This feature is provided thanks to
+                        Nico's publication of the PPData
+                        source code.
+                    </p>
+                    <p class="indent">
+                        The song file on this month's
+                        disc has been compressed using
+                        this method. Remember, while compressed songs may include
+                    </p>
                 </div>
                 <div class="column">
                     <p>
@@ -345,14 +344,15 @@
                         BBS (0101- 303-322-4078).</div>
                 </div>
             </article>
-    
+
         </article>
     </div>
     <div class="container" id="rosa" style="margin-top: 0; height: 20vh;">
         <article>
             <div class="column codeclinic">
                 <img src="../img/CodeClinic.png" id="codeclinic" alt="the code clinic">
-                <p class="initial">T<p>
+                <p class="initial">T
+                <p>
                 <p>
                     HIS drawer will be a regu-
                     lar feature on the disc from

@@ -8,87 +8,100 @@ menu
 
 ////////////////////////////////////////////////////*/
 
+/* Mobile */
+
 nav {
+    position: fixed;
+    top: 0vh;
+
     display: flex;
     justify-content: center;
-    gap: 1.5vw;
-
-    position: relative;
+    flex-wrap: wrap;
+    gap: 0;
 
     width: 100vw;
+    height: 0vh;
 
-    height: 35vw;
-    max-height: 275px;
-
-    margin: 6vh 0% 6vh 0%;
+    margin: 0 0% 6vh 0%;
+    padding: 0%;
 
     border: 1px solid black;
+
+    z-index: 200;
 }
 
-.boxRed {
 
+.letterBox {
+
+    position: relative;
     display: flex;
     justify-content: center;
 
-    align-self: flex-end;
-    width: 13vw;
-    max-width: 99px;
-    height: 33vw;
-    max-height: 259px;
+    width: 48vw;
+    height: 50vh;
     background-color: #ec3c10;
 
-    margin-left: 0.1%;
-    margin-right: 0.1%;
+    margin: 1%;
     padding: 0%;
 
 }
 
-.boxRed:hover .letterYellow {
-    display: none;
-}
 
-.boxRed:hover .letterYellowAlt {
-    display: block;
-}
-
-.boxYellow {
-
-    display: flex;
-    justify-content: center;
-
-    align-self: flex-start;
-
-    width: 13vw;
-    max-width: 99px;
-    height: 33vw;
-    max-height: 259px;
+.letterBox#D {
     background-color: #f8e006;
-
-    margin-left: 0.1%;
-    margin-right: 0.1%;
-    padding: 0%;
+    left: -42vw;
 }
 
-.boxYellow:hover .letterRed {
-    display: none;
+.letterBox#I {
+    background-color: #ec3c10;
+    right: -42vw;
 }
 
-.boxYellow:hover .letterRedAlt {
-    display: block;
+.letterBox#S {
+    background-color: #ec3c10;
+    left: -42vw;
 }
 
-.letterRed {
+.letterBox#C {
+    background-color: #f8e006;
+    right: -42vw;
+}
+
+/* hover */
+
+.letterBox#D:hover {
+    left: -1vw;
+
+}
+
+.letterBox#I:hover {
+    right: -1vw;
+}
+
+.letterBox#S:hover {
+    left: -1vw;
+
+}
+
+.letterBox#C:hover {
+    right: -1vw;
+}
+
+
+
+
+.letter {
 
     font-family: 'Tinos', serif;
-    font-size: 42vw;
+    font-size: 40vh;
 
     display: block;
     position: relative;
-    top: -25%;
+    top: -2%;
     color: #ec3c10;
     text-decoration: none;
 
-    text-shadow: 1vw 0.4vw 1px black;
+    text-shadow: 20px 10px 1px black;
 
     -webkit-transform: scale(0.4, 1);
     -moz-transform: scale(0.4, 1);
@@ -97,102 +110,27 @@ nav {
     transform: scale(0.4, 1);
 }
 
-.letterRedAlt {
-    font-family: 'Tinos', serif;
-    font-size: 3vw;
-
-    text-decoration: none;
+.letter#D {
     color: #ec3c10;
-    text-shadow: 0.12vw 0.12vw 1px black;
-
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-
-    letter-spacing: -20%;
-
-    display: none;
-    position: relative;
-    top: 6%;
-
 }
 
-.letterYellow {
-
-    font-family: 'Tinos', serif;
-    font-size: 42vw;
-
-    display: block;
-    position: relative;
-    top: -25%;
+.letter#I {
     color: #f8e006;
-    text-decoration: none;
-
-    text-shadow: 1vw 0.4vw 1px black;
-
-    -webkit-transform: scale(0.4, 1);
-    -moz-transform: scale(0.4, 1);
-    -ms-transform: scale(0.4, 1);
-    -o-transform: scale(0.4, 1);
-    transform: scale(0.4, 1);
 }
 
-.letterYellowAlt {
-    font-family: 'Tinos', serif;
-    font-size: 3vw;
-
-    text-decoration: none;
+.letter#S {
     color: #f8e006;
-    text-shadow: 0.12vw 0.12vw 1px black;
-
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-
-    letter-spacing: -20%;
-
-    display: none;
-    position: relative;
-    top: 6%;
-
 }
 
-.the {
-    align-self: flex-end;
-
-    font-family: 'Tinos', serif;
-    font-size: 7vw;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-align: center;
-    letter-spacing: 0.4em;
-
-    color: #fff;
-
-    padding-top: 1%;
-    padding-bottom: 0%;
-
-    margin: 0%;
-
-    background-color: #000;
+.letter#C {
+    color: #ec3c10;
 }
 
-@media screen and (min-width: 786px) {
 
-    nav {
-        width: 100vw;
-    }
-
-    .letterRed {
-        font-size: 330px;
-    }
-
-    .letterYellow {
-        font-size: 330px;
-    }
-
-    .the {
-        font-size: 55px;
-    }
+.letter.yellow {
+    color: #f8e006;
 }
+    
 
 /*////////////////////////////////////////////////////
 
@@ -200,15 +138,8 @@ general
 
 ////////////////////////////////////////////////////*/
 
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0% 0% 0% 0%;
-    overflow-x: hidden;
-}
-
 /*for debugging*/
+
 /*
 * {
     background: #000 !important;
@@ -216,6 +147,17 @@ body {
     outline: solid #f00 1px !important;
   }
 */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0%;
+    padding-top: 10vh;
+    overflow-x: hidden;
+}
+
+
 
 .container {
     display: flex;
@@ -399,7 +341,7 @@ CUSTREQ
 #rosa {
     background-color: #d66a8f;
 
-    margin-top: 20vh;
+    margin-top: 10vh;
     height: auto;
 }
 
@@ -409,6 +351,7 @@ CUSTREQ
 
 #green {
     background-color: #0aa14f;
+    height: fit-content
 }
 
 #musicbox {
@@ -428,6 +371,15 @@ p.mono {
     text-align: left;
 }
 
+#usageContainer {
+    justify-content: center;
+}
+
+article#usage {
+    background-color: black;
+    width: 100%;
+}
+
 .inlinebox.startup {
     background-color: #cfe7a0;
     color: black;
@@ -440,6 +392,7 @@ p.mono {
 h1.startup {
     color: #d94590;
     text-shadow: 4px 4px 1px white;
+    margin-bottom: 10%;
 }
 
 
@@ -476,7 +429,7 @@ article.nopal {
     justify-content: end;
     padding: 0%;
     position: relative;
-    width: 50%;
+    width: 200px;
     right: 0%;
     align-self: start;
     color: white;
@@ -487,11 +440,12 @@ h1.musicbox {
     color: #09507d;
     text-shadow: 4px 4px 1px white;
     text-align: center;
+    margin: 5% 5% 5% 0%;
 }
 
 article.musicbox {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 
 .column.codeclinic {
@@ -515,6 +469,7 @@ article.musicbox {
 
     #rosa {
         background: linear-gradient(to right, #d66a8f 80%, rgb(0, 0, 0, 0) 20%);
+        margin-top: 20vh;
     }
 
     #orange {
@@ -537,10 +492,22 @@ article.musicbox {
         font-size: 20px;
     }
 
+    #usageContainer {
+        justify-content: right;
+    }
+
+    article#usage {
+        width: 100%;
+    }
+
     article.startup {
         flex-wrap: wrap;
         align-content: start;
-        height: 75vh;
+        height: 70vh;
+    }
+
+    h1.startup {
+        margin-bottom: 0%;
     }
 
     .column.startup {
@@ -553,8 +520,14 @@ article.musicbox {
         align-items: start;
     }
 
-    h1.musicbox {
-        text-align: left;
+    .column.nopal {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    article#usage {
+        width: 60%;
     }
 }
 
@@ -575,6 +548,10 @@ SYS
     flex-direction: column;
     align-items: center;
     background-color: #5fc7db;
+
+    justify-content: start;
+
+    height: 180vh;
 }
 
 #greenchaos {
@@ -582,7 +559,7 @@ SYS
     flex-direction: column;
     align-items: center;
     background-color: #0aa14f;
-    margin-top: 60vh;
+    margin-top: 75vh;
 }
 
 #sys {
@@ -634,18 +611,51 @@ img#chaosimg {
 }
 
 img#workbench {
-    position: relative;
-    top: -5vh;
     width: 100%;
 }
 
 h1#megawb {
     padding: 0%;
-    margin-top: 0%;
+    margin: 0%;
     color: #292758;
     text-shadow: 4px 4px 1px black;
-    font-size: 64px;
+    font-size: 48px;
 }
+
+article#megawb-header {
+    position: relative;
+    top: -5vh
+}
+
+article#megawb-text {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80%;
+
+    margin-top: 0%;
+
+}
+
+.column#megawb-bugs {
+    background-color: #223061;
+    margin-top: 10%;
+    color: white;
+
+    order: 1
+}
+
+.column#copyright {
+    align-self: end;
+    padding-top: 10%;
+    order: 2
+}
+
+h2#megawb-bugs-header {
+    background-color: black;
+    font-size: 24px;
+}
+
 
 
 @media screen and (min-width: 769px) {
@@ -655,15 +665,19 @@ h1#megawb {
 
     #blue {
         position: relative;
-        margin-top: 50vh;
-        background: linear-gradient(to left, #5fc7db 80%, rgb(0, 0, 0, 0) 20%);
+        margin-top: 40vh;
+        background: linear-gradient(to right, #5fc7db 80%, rgb(0, 0, 0, 0) 20%);
+        height: 200vh;
+        justify-content: start;
     }
-    
+
     #greenchaos {
         align-items: center;
         background: linear-gradient(to left, #0aa14f 80%, rgb(0, 0, 0, 0) 20%);
-        margin-top: 60vh;
+        margin-top: 40vh;
+        z-index: -100;
     }
+
     #sys {
         justify-content: right;
     }
@@ -703,14 +717,33 @@ h1#megawb {
     }
 
     img#workbench {
-        position: absolute;
-        top: -40vh;
         width: 50vw;
     }
 
+
+    article#megawb-header {
+        top: -20vh
+    }
+
+    article#megawb-text {
+        justify-content: end;
+        position: inherit;
+        top: -5%;
+        right: 10%;
+        width: 50%;
+    }
+
     h1#megawb {
-        margin-top: 15vh;
         text-shadow: 8px 8px 1px black;
         font-size: 128px;
     }
-}  
+
+    .column#megawb-bugs {
+        margin-top: 2%;
+        order: 2;
+    }
+
+    .column#copyright {
+        order: 1;
+    }
+}
