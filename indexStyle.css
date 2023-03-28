@@ -226,6 +226,7 @@ nav {
 
     .letterAlt {
         font-size: 18vh;
+        text-shadow: 0.3vw 0.3vw 1px black;
     }
 
     .letter#S {
@@ -242,13 +243,17 @@ nav {
     
     .letterAlt#I {
         top: 10%;
+        font-size: 17vh;
     }
     
     .letterAlt#S {
+        color: #ec3c10;
         font-size: 10vh;
     }
     
     .letterAlt#C {
-        top: 15%;
+        color: #f8e006;
+        top: 20%;
+        font-size: 17vh;
     }
 }

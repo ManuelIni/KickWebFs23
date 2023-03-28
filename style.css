@@ -680,7 +680,7 @@ SYS
 
     justify-content: start;
 
-    height: 200vh;
+    height: 2000px;
 }
 
 #greenchaos {
@@ -851,7 +851,7 @@ h2#megawb-bugs-header {
         position: relative;
         margin-top: 30vh;
 
-        height: 200vh;
+        height: 2000px;
         justify-content: start;
         align-items: flex-end;
     }
