@@ -11,18 +11,18 @@
 
 <body>
     <nav>
-            <div class="letterBox" id="D">
-                <a class="letter" id="D" href="../index.html">D</a>
-            </div>
-            <div class="letterBox" id="I">
-                <a class="letter" id="I" href="mega.html">I</a>
-            </div>
-            <div class="letterBox" id="S">
-                <a class="letter" id="S" href="custreq.html">S</a>
-            </div>
-            <div class="letterBox" id="C">
-                <a class="letter" id="C" href="../index.html">C</a>
-            </div>
+        <div class="letterBox" id="D">
+            <a class="letter" id="D" href="../index.html">D</a>
+        </div>
+        <div class="letterBox" id="I">
+            <a class="letter" id="I" href="mega.html">I</a>
+        </div>
+        <div class="letterBox" id="S">
+            <a class="letter" id="S" href="custreq.html">S</a>
+        </div>
+        <div class="letterBox" id="C">
+            <a class="letter" id="C" href="../index.html">C</a>
+        </div>
     </nav>
 
 
@@ -97,15 +97,17 @@
                     the desired gadget.
                 </p>
             </div>
-            <div class="column" style="display:flex; flex: 2 0 200px; justify-content: center;">
-                <img src="../img/LoadWorkbench.png" id="custreq-img" alt="a prompt to load the workbench">
+            <div class="column">
+                <div id="wordseeker">
+                    <img src="../img/wordseeker.png" style="width: 100%;" alt="play wordseeker?">
+                </div>
+
             </div>
         </article>
     </div>
-
-    <div class="container" id="orange" style="height: auto; margin-top: 20vh; padding: 0%;">
-        <article style="justify-content: flex-end; position: relative; top: -10vh;">
-            <div class="inlinebox shadow" style="margin: 0%;">
+    <div class="container" id="orange" style="justify-content: center; margin-top: 30vh;">
+        <article id="usageContainer">
+            <div class="inlinebox shadow" id="copyright-custreq">
                 <p>
                     CUSTREQ is not public domain,
                     but may be distributed freely. It
@@ -115,11 +117,6 @@
                         SA 5034, Australia.</span>
                 </p>
             </div>
-        </article>
-    </div>
-
-    <div class="container" id="orange" style="justify-content: center;">
-        <article id="usageContainer">
             <article id="usage">
                 <div class="column"
                     style="width: 96%; height: auto; color: black; background-color: #f65f28; margin-bottom: 5%;">
@@ -144,7 +141,7 @@
                         </ul>
                         </p>
                     </div>
-                    <div class="column" style="background-color: #f65f28">
+                    <div class="column" style="background-color: #f65f28; margin-bottom: 3%;">
                         <h2 class="black">Example</h2>
                         <p class="indent mono">
                             CustReq "My Request" "Do you
@@ -203,7 +200,7 @@
                     program on the cover disc is different than above, but I've
                 </p>
             </div>
-            <div class="column startup">
+            <div class="column startup" style="margin-top: 3%;">
                 <h1 class="startup">Startup v2.0</h1>
             </div>
             <div class="column">
@@ -226,9 +223,11 @@
                     choice 2 executes s:Startup,2, and
                     so on up to s:Startup.9.
                 </p>
-                <p style="text-align: right;">
-                    By the way, I found that if I
-                </p>
+            </div>
+            <div class="column">
+                <div id="loadWorkbench">
+                    <img src="../img/LoadWorkbench.png" style="width: 100%;" alt="a prompt to load the workbench">
+                </div>
             </div>
         </article>
     </div>

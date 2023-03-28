@@ -134,7 +134,7 @@ nav {
 /* Desktop */
 
 @media screen and (min-width: 769px) {
-    
+
     nav {
         flex-wrap: nowrap;
         height: 10vh;
@@ -145,13 +145,13 @@ nav {
         width: 23vw;
         height: 96vh;
         top: -90vh;
-  
+
     }
 
     .letterBox#D {
         left: 0;
     }
-    
+
     .letterBox#I {
         right: 0;
     }
@@ -160,7 +160,7 @@ nav {
         background-color: #f8e006;
         left: 0;
     }
-    
+
     .letterBox#C {
         background-color: #ec3c10;
         left: 0;
@@ -181,7 +181,7 @@ nav {
     .letter#S {
         color: #ec3c10;
     }
-    
+
     .letter#C {
         color: #f8e006;
     }
@@ -397,7 +397,7 @@ CUSTREQ
 #rosa {
     background-color: #e65789;
 
-    margin-top: 10vh;
+    margin-top: 20vh;
     height: auto;
 }
 
@@ -410,8 +410,10 @@ CUSTREQ
     height: fit-content
 }
 
-#custreq-img {
-    width: 130%;
+#wordseeker {
+    position: relative;
+    left: -50%;
+    width: 100vw;
     margin-top: 10%;
 }
 
@@ -432,13 +434,25 @@ p.mono {
     text-align: left;
 }
 
+#copyright-custreq {
+    margin: 0%;
+    margin-right: 10%;
+    padding: 2%;
+    width: 220px;
+    align-self: center;
+    position: relative;
+    top: -10vh;
+}
+
 #usageContainer {
     justify-content: center;
+    flex-direction: column;
 }
 
 article#usage {
     background-color: black;
-    width: 100%;
+    width: 220px;
+    align-self: center;
 }
 
 .inlinebox.startup {
@@ -465,6 +479,13 @@ article.startup {
     align-items: center;
     flex-wrap: nowrap;
     height: fit-content;
+}
+
+#loadWorkbench {
+    position: relative;
+    left: -50%;
+    width: 100vw;
+    margin-top: 10%;
 }
 
 .column.startup {
@@ -530,23 +551,22 @@ article.musicbox {
 
     #rosa {
         background: linear-gradient(to right, #e65789 80%, rgb(0, 0, 0, 0) 20%);
-        margin-top: 20vh;
     }
 
     #orange {
-        background: linear-gradient(to right, #ff9d09 80%, rgb(0, 0, 0, 0) 20%);
+        background: linear-gradient(to right, #ff9d09 82%, rgb(0, 0, 0, 0) 18%);
     }
 
     #green {
         background: linear-gradient(to left, #00a34a 80%, rgb(0, 0, 0, 0) 20%);
     }
 
-    #custreq-img {
-        position: relative;
-        left: 0%;
-        width: 400px;
-        margin-top: 0%;
+    #wordseeker {
+        padding-top: 40%;
+        width: 300%;
+        left: 0;
     }
+
 
     #musicbox {
         width: 240%;
@@ -560,8 +580,18 @@ article.musicbox {
         font-size: 20px;
     }
 
+    #copyright-custreq {
+        align-self: flex-start;
+        position: relative;
+        top: -10vh;
+        margin-right: 10%;
+    }
+
     #usageContainer {
         justify-content: right;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2%;
     }
 
     article#usage {
@@ -572,6 +602,13 @@ article.musicbox {
         flex-wrap: wrap;
         align-content: start;
         height: 70vh;
+    }
+
+    #loadWorkbench {
+        padding-top: 40%;
+        width: 300%;
+        left: 0;
+
     }
 
     h1.startup {
@@ -607,11 +644,11 @@ SYS
 ////////////////////////////////////////////////////*/
 
 #lightorange {
-    background-color: #ffcb81;
+    background-color: #ffc895;
 }
 
 #lightorange-sys {
-    background-color: #ffcb81;
+    background-color: #ffc895;
     justify-content: center;
 }
 
@@ -624,7 +661,7 @@ SYS
 
     justify-content: start;
 
-    height: 180vh;
+    height: 200vh;
 }
 
 #greenchaos {
@@ -632,7 +669,7 @@ SYS
     flex-direction: column;
     align-items: center;
     background-color: #0aa14f;
-    margin-top: 55vh;
+    margin-top: 65vh;
 }
 
 #sys {
@@ -681,6 +718,14 @@ article#file-tips {
     width: 100%;
 }
 
+h1#chaos {
+    font-size: 64px;
+    color: white;
+    text-shadow: 4px 4px 1px #e95a2d;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
 article#chaos {
     flex-direction: column;
     align-items: center;
@@ -695,16 +740,27 @@ img#chaosimg {
 }
 
 img#workbench {
-    width: 100%;
+    width: 200%;
+    position: relative;
+    top: -10%;
+    left: -50%;
 }
 
 h1#megawb {
     padding: 0%;
     margin: 0%;
-    margin-top: 10%;
+    margin-top: -10%;
     color: #292758;
     text-shadow: 4px 4px 1px black;
-    font-size: 48px;
+    font-size: 128px;
+    position: relative;
+    left: -50%;
+
+    -webkit-transform: scale(0.4, 1);
+    -moz-transform: scale(0.4, 1);
+    -ms-transform: scale(0.4, 1);
+    -o-transform: scale(0.4, 1);
+    transform: scale(0.4, 1);
 }
 
 article#megawb-header {
@@ -717,9 +773,10 @@ article#megawb-text {
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 100vw;
+    width: 50vw;
+    align-self: center;
 
-    margin-top: 10%;
+    margin-top: -20%;
 }
 
 article#megawb-bugs {
@@ -755,17 +812,17 @@ h2#megawb-bugs-header {
 
 @media screen and (min-width: 769px) {
     #lightorange {
-        background: linear-gradient(to right, #ffcb81 80%, rgb(0, 0, 0, 0) 20%);
+        background: linear-gradient(to right, #ffc895 80%, rgb(0, 0, 0, 0) 20%);
     }
 
     #lightorange-sys {
-        background: linear-gradient(to right, #ffcb81 80%, rgb(0, 0, 0, 0) 20%);
+        background: linear-gradient(to right, #ffc895 80%, rgb(0, 0, 0, 0) 20%);
         justify-content: start;
     }
 
     #blue {
         position: relative;
-        margin-top: 40vh;
+        margin-top: 30vh;
         background: linear-gradient(to right, #5fc7db 80%, rgb(0, 0, 0, 0) 20%);
         height: 200vh;
         justify-content: start;
@@ -807,13 +864,6 @@ h2#megawb-bugs-header {
         padding-left: 5%;
     }
 
-    h1#chaos {
-        font-size: 64px;
-        color: white;
-        text-shadow: 4px 4px 1px #e95a2d;
-        margin-top: 15%;
-        margin-bottom: 15%;
-    }
 
     article#chaos {
         flex-direction: row;
@@ -830,6 +880,9 @@ h2#megawb-bugs-header {
 
     img#workbench {
         width: 50vw;
+        position: relative;
+        left: 0%;
+        top: -10%;
     }
 
     article#file-tips-container {
@@ -861,17 +914,20 @@ h2#megawb-bugs-header {
 
     h1#megawb {
         text-shadow: 8px 8px 1px black;
-        font-size: 150px;
-        margin-top: 5%;
+        font-size: 250px;
+        margin-top: 0%;
+        position: relative;
+        left: -22%;
     }
 
     .column#megawb-bugs {
         margin-top: 2%;
+        margin-right: 4%;
     }
 
     .column#copyright {
-        width:270px;
-        left: 1%;
+        width: 270px;
+        left: -2%;
     }
 
 }
