@@ -175,7 +175,7 @@ nav {
 }
 
 .letterAlt#D {
-    top: 10%;
+    font-size: 10vh;
 }
 
 .letterAlt#I {
@@ -187,7 +187,7 @@ nav {
 }
 
 .letterAlt#C {
-    font-size: 10vh;
+    top: 15%;
 }
 
 /* Desktop */
