@@ -145,6 +145,7 @@ nav {
     nav {
         flex-wrap: nowrap;
         height: 10vh;
+        background-color: rgb(255, 236, 236);
     }
 
     .letterBox {
@@ -214,32 +215,14 @@ general
 */
 
 body {
-    position: relative;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0%;
     padding-top: 10vh;
     overflow-x: hidden;
-    background-size: 100% 200%;
+    background-color: rgb(255, 236, 236);
 }
-
-body:before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 120%;
-    width: 120%;
-    background: #ffffff;
-    background-image: url(/gradient/gradient.svg);
-    filter: brightness(120%)
-    
-}
-
 
 
 
@@ -425,16 +408,14 @@ CUSTREQ
 
 #rosa1 {
     background-color: #e65789;
-    border-style: solid;
-    border-color: black black rgb(0, 0, 0, 0) rgb(0, 0, 0, 0);
-    margin-top: 40vh;
+
+    margin-top: 20vh;
     height: auto;
 }
 
 #rosa2 {
     background-color: #e65789;
-    border-style: solid;
-    border-color: rgb(0, 0, 0, 0) black black rgb(0, 0, 0, 0);
+
     margin-top: 20vh;
     height: auto;
 }
@@ -450,15 +431,13 @@ CUSTREQ
 
 #wordseeker {
     position: relative;
-    left: -37%;
-    width: 75vw;
+    left: -50%;
+    width: 100vw;
     margin-top: 10%;
 }
 
 #musicbox {
-    position: relative;
-    left: -25%;
-    width: 150%;
+    width: 100%;
 }
 
 h2.black {
@@ -494,7 +473,6 @@ article#usage {
     width: 220px;
     align-self: center;
     border: 2px solid black;
-
 }
 
 .inlinebox.startup {
@@ -530,6 +508,9 @@ article.startup {
     margin-top: 10%;
 }
 
+.column.startup {
+    order: -1;
+}
 
 h1.nopal {
     color: white;
@@ -542,7 +523,7 @@ article.nopal {
     align-items: center;
     width: 100%;
     margin-top: 1%;
-
+    
 
 }
 
@@ -588,6 +569,17 @@ article.musicbox {
         left: 20%;
     }
 
+    #rosa1 {
+        border-style: solid;
+        border-color: black black rgb(0, 0, 0, 0) rgb(0, 0, 0, 0);
+    }
+
+    #rosa2 {
+        border-style: solid;
+        border-color: rgb(0, 0, 0, 0) black black rgb(0, 0, 0, 0);
+    }
+
+
     #pinkleft {
         justify-content: flex-end;
     }
@@ -598,10 +590,6 @@ article.musicbox {
         left: 20%;
     }
 
-    #rosa1 {
-        margin-top: 50vh;
-    }
-
     #wordseeker {
         padding-top: 40%;
         width: 300%;
@@ -610,7 +598,6 @@ article.musicbox {
 
 
     #musicbox {
-        left: 0%;
         width: 240%;
     }
 
@@ -632,7 +619,7 @@ article.musicbox {
     #usageContainer {
         justify-content: right;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         padding: 2%;
     }
 
@@ -643,7 +630,7 @@ article.musicbox {
     article.startup {
         flex-wrap: wrap;
         align-content: start;
-        height: 105vh;
+        height: 70vh;
     }
 
     #loadWorkbench {
@@ -655,6 +642,10 @@ article.musicbox {
 
     h1.startup {
         margin-bottom: 0%;
+    }
+
+    .column.startup {
+        order: 0;
     }
 
     article.nopal {
