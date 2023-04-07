@@ -27,7 +27,7 @@ nav {
 
     /*border: 1px solid black;*/
 
-    z-index: 200;
+    z-index: 100;
 }
 
 
@@ -42,56 +42,58 @@ nav {
     background-color: #ec3c10;
     margin: 1%;
     padding: 0%;
-
 }
 
 
 .letterBox#D {
     background-color: #f8e006;
-
-    transition: left 1s;
-    left: -42vw;
+    left: 0vw;
 }
 
 .letterBox#I {
     background-color: #ec3c10;
-
-    transition: right 1s;
-    right: -42vw;
+    right: 0vw;
 }
 
 .letterBox#S {
     background-color: #ec3c10;
-
-    transition: left 1s;
-    left: -42vw;
+    left: 0vw;
 }
 
 .letterBox#C {
     background-color: #f8e006;
+    right: 0vw;
+}
 
-    transition: right 1s;
-    right: -42vw;
+/* intro */
+
+
+.introAnimation#D, .introAnimation#S {
+    animation: 1s ease-in-out 1s 1 normal forwards paused intro_mobile_left;
+}
+
+.introAnimation#I, .introAnimation#C {
+    animation: 1s ease-in-out 1s 1 normal forwards paused intro_mobile_right;
 }
 
 /* hover */
 
-.letterBox#D:hover {
-    left: 0;
-
+.hoverAnimation#D, .hoverAnimation#S {
+    transition: left 1s;
+    left: -42vw;
 }
 
-.letterBox#I:hover {
-    right: 0;
+.hoverAnimation#D:hover, .hoverAnimation#S:hover {
+    left: 0vw;
 }
 
-.letterBox#S:hover {
-    left: 0;
-
+.hoverAnimation#I, .hoverAnimation#C {
+    transition: right 1s;
+    right: -42vw
 }
 
-.letterBox#C:hover {
-    right: 0;
+.hoverAnimation#I:hover, .hoverAnimation#C:hover {
+    right: 0vw
 }
 
 
@@ -150,8 +152,6 @@ nav {
     .letterBox {
         width: 23vw;
         height: 96vh;
-        transition: top 1s;
-        top: -90vh;
     }
 
     .letterBox#D {
@@ -176,13 +176,6 @@ nav {
         transition: top 1s;
     }
 
-    /* hover */
-
-    .letterBox:hover {
-        top: -3vh
-    }
-
-
     .letter {
         top: -10%;
         font-size: 100vh;
@@ -194,7 +187,25 @@ nav {
 
     .letter#C {
         color: #f8e006;
-    }
+    }   
+
+/* intro */
+
+
+.introAnimation {
+    animation: 1s ease-in-out 1s 1 normal forwards paused intro_desktop;
+}
+
+/* hover */
+
+.hoverAnimation {
+    top: -90vh;
+}
+
+.hoverAnimation:hover {
+    top: 0vh;
+}
+
 }
 
 /*////////////////////////////////////////////////////
@@ -235,8 +246,13 @@ body:before {
     height: 120%;
     width: 120%;
     background: #ffffff;
+    mix-blend-mode: multiply;
+    opacity: .3;
     background-image: url(/gradient/gradient.svg);
-    filter: brightness(120%)
+    filter: brightness(120%), grayscale(1);
+
+    cursor: pointer;
+    pointer-events: none;
     
 }
 

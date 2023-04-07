@@ -1,0 +1,39 @@
+/* intro animations */
+
+@keyframes intro_mobile_left {
+    from {
+        left:0;
+    }
+    to {
+        left: -42vw;
+    }
+}
+
+@keyframes intro_mobile_right {
+    from {
+        right:0;
+    }
+    to {
+        right: -42vw;
+    }
+}
+
+@keyframes intro_desktop {
+    from {
+        top:0;
+    }
+    to {
+        top: -92vh;
+    }
+}
+
+/* hover animations */
+
+@keyframes nav_hover_left {
+    from {
+        left: -42vw;
+    }
+    to {
+        left: 0vw;
+    }
+}
