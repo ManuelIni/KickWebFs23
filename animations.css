@@ -1,4 +1,4 @@
-/* intro animations */
+/* intro */
 
 @keyframes intro_mobile_left {
     from {
@@ -27,7 +27,7 @@
     }
 }
 
-/* hover animations */
+/* hover */
 
 @keyframes nav_hover_left {
     from {
@@ -35,5 +35,60 @@
     }
     to {
         left: 0vw;
+    }
+}
+
+/* header */
+
+@keyframes header_color_switch {
+    0% {
+        color: var(--color-1);
+        --shadow-color: var(--color-2);
+    }
+    100% {
+        color: var(--color-2);
+        --shadow-color: var(--color-1);
+    }
+
+}
+
+/* disc */
+
+.disc {
+    margin-top: 38vh;
+    z-index: -100;
+    position: absolute;
+    width: 100px;
+}
+
+@media screen and (min-width: 769px) {
+    .disc {
+        margin-top: 3vh;
+        width: 200px;
+    }
+}
+
+.disc#first {
+    animation: 15s linear 0s infinite normal forwards running disc;
+}
+
+.disc#second {
+    animation: 15s linear 5s infinite normal forwards running disc;
+    left:-30vw;
+}
+
+.disc#third {
+    animation: 15s linear 10s infinite normal forwards running disc;
+    left:-30vw;
+}
+
+
+@keyframes disc {
+    from {
+        left: -30vw;
+    }
+
+    to {
+        left: 130vw
     }
 }

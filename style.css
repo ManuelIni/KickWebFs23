@@ -27,7 +27,7 @@ nav {
 
     /*border: 1px solid black;*/
 
-    z-index: 100;
+    z-index: 300;
 }
 
 
@@ -248,7 +248,7 @@ body:before {
     background: #ffffff;
     mix-blend-mode: multiply;
     opacity: .3;
-    background-image: url(/gradient/gradient.svg);
+    background-image: url(/gradient/grain.svg);
     filter: brightness(120%), grayscale(1);
 
     cursor: pointer;
@@ -315,16 +315,22 @@ text
 ////////////////////////////////////////////////////*/
 
 h1 {
+    --color-1: #000000;
+    --color-2: #f1510c;
+    --shadow-color: var(var(--color-2));
+
     display: block;
     font-family: 'Tinos', serif;
-    font-size: 32px;
-    color: black;
+    font-size: 50px;
+    color: var(--color-1);
     text-align: center;
 
     padding: 0;
     margin: 0% 0% 2% 0%;
 
-    text-shadow: 4px 4px 1px rgb(241, 81, 12);
+    text-shadow: 4px 4px 1px var(--shadow-color);
+
+    animation: 1s linear 1s infinite normal forwards running header_color_switch;
 }
 
 h1::after {
@@ -373,7 +379,7 @@ ul.a {
 
 @media screen and (min-width: 789px) {
     h1 {
-        font-size: 48px;
+        font-size: 60px;
     }
 
     h2 {
@@ -432,15 +438,15 @@ CUSTREQ
 ////////////////////////////////////////////////////*/
 
 #pink {
-    background-color: #ffadad;
+    background: #ffadad;
 }
 
 #pinkleft {
-    background-color: #ffadad;
+    background: #ffadad;
 }
 
 #rosa1 {
-    background-color: #e65789;
+    background: #e65789;
     border-style: solid;
     border-color: black black rgb(0, 0, 0, 0) rgb(0, 0, 0, 0);
     margin-top: 40vh;
@@ -448,7 +454,7 @@ CUSTREQ
 }
 
 #rosa2 {
-    background-color: #e65789;
+    background: #e65789;
     border-style: solid;
     border-color: rgb(0, 0, 0, 0) black black rgb(0, 0, 0, 0);
     margin-top: 20vh;
@@ -523,8 +529,10 @@ article#usage {
 }
 
 h1.startup {
-    color: #f3278d;
-    text-shadow: 4px 4px 1px white;
+    --color-1: #f3278d;
+    --color-2: #ffffff;
+    --shadow-color: var(--color-2);
+    text-shadow: 4px 4px 1px var(--shadow-color);
     margin-bottom: 10%;
 }
 
@@ -548,8 +556,11 @@ article.startup {
 
 
 h1.nopal {
-    color: white;
-    text-shadow: 4px 4px 1px black;
+    --color-1: #ffffff;
+    --color-2: #000000;
+    --shadow-color: var(--color-2);
+    text-shadow: 4px 4px 1px --shadow-color;
+
 }
 
 article.nopal {
@@ -576,8 +587,10 @@ article.nopal {
 }
 
 h1.musicbox {
-    color: #01609b;
-    text-shadow: 4px 4px 1px white;
+    --color-1: #01609b;
+    --color-2: #ffffff;
+    --shadow-color: var(--color-2);
+    text-shadow: 4px 4px 1px --shadow-color;
     text-align: center;
     margin: 5% 5% 5% 0%;
 }
@@ -659,7 +672,12 @@ article.musicbox {
     article.startup {
         flex-wrap: wrap;
         align-content: start;
-        height: 105vh;
+        height: 70vh;
+        padding-top: 3vh;
+    }
+
+    .column.startup {
+        margin-top: 0%;
     }
 
     #loadWorkbench {
@@ -671,6 +689,7 @@ article.musicbox {
 
     h1.startup {
         margin-bottom: 0%;
+        margin-top: 0%;
     }
 
     article.nopal {
@@ -681,6 +700,12 @@ article.musicbox {
 
     .column.nopal {
         width: 50%;
+    }
+
+    h1.musicbox {
+        font-size: 120px;
+        align-self: flex-start;
+        padding-left: 1vw;
     }
 }
 
@@ -740,9 +765,11 @@ SYS
 }
 
 h1#sysheader {
+    --color-1: #000000;
+    --color-2: #e75c2f;
+    --shadow-color: var(var(--color-2));
     font-size: 112px;
-    color: #e75c2f;
-    text-shadow: 4px 4px 1px black;
+    text-shadow: 4px 4px 1px var(--shadow-color);
     margin-bottom: 10%;
 }
 
@@ -777,9 +804,11 @@ article#file-tips {
 }
 
 h1#chaos {
+    --color-1: #ffffff;
+    --color-2: #e95a2d;
+    --shadow-color: var(var(--color-2));
     font-size: 64px;
-    color: white;
-    text-shadow: 4px 4px 1px #e95a2d;
+    text-shadow: 4px 4px 1px var(--shadow-color);
     margin-top: 15%;
     margin-bottom: 15%;
 }
@@ -805,11 +834,13 @@ img#workbench {
 }
 
 h1#megawb {
+    --color-1: #292758;
+    --color-2: #000000;
+    --shadow-color: var(var(--color-2));
     padding: 0%;
     margin: 0%;
     margin-top: -10%;
-    color: #292758;
-    text-shadow: 4px 4px 1px black;
+    text-shadow: 4px 4px 1px var(--shadow-color);
     font-size: 128px;
     position: relative;
     left: -50%;
@@ -951,8 +982,8 @@ h2#megawb-bugs-header {
     }
 
     article#file-tips-container {
-        justify-content: flex-end;
-        width: 60%;
+        justify-content: flex-start;
+        margin-left: 12.5vw;
     }
 
     article#file-tips {
