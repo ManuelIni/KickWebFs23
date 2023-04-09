@@ -629,7 +629,7 @@ article.musicbox {
     }
 
     #rosa1 {
-        margin-top: 50vh;
+        margin-top: 30vh;
     }
 
     #wordseeker {
@@ -725,11 +725,13 @@ SYS
 #lightorange-sys {
     background-color: #ffc895;
     justify-content: center;
+    border-color: black black rgb(0, 0, 0, 0) rgb(0, 0, 0, 0);
 }
 
 #lightorange {
     background-color: #ffc895;
     justify-content: center;
+    border-color: rgb(0, 0, 0, 0) black black rgb(0, 0, 0, 0);
 }
 
 #blue {
@@ -834,8 +836,8 @@ img#workbench {
 }
 
 h1#megawb {
-    --color-1: #292758;
-    --color-2: #000000;
+    --color-1: #354f91;
+    --color-2: #ffffff;
     --shadow-color: var(var(--color-2));
     padding: 0%;
     margin: 0%;
@@ -906,12 +908,12 @@ h2#megawb-bugs-header {
         background-color: #ffc895;
         justify-content: end;
         border-style: solid;
-        border-color: black black rgb(0, 0, 0, 0) rgb(0, 0, 0, 0);
+
     }
 
     #lightorange {
         border-style: solid;
-        border-color: rgb(0, 0, 0, 0) black black rgb(0, 0, 0, 0);
+
     }
 
     #blue {
@@ -957,7 +959,7 @@ h2#megawb-bugs-header {
     #controls {
         margin-top: 0vh;
         justify-content: start;
-        padding-left: 5%;
+        padding-left: 30%;
     }
 
 
@@ -993,9 +995,10 @@ h2#megawb-bugs-header {
 
 
     article#megawb-header {
+        align-self: flex-end;
         top: -20vh;
-        align-items: flex-end;
-        width: 100%;
+        align-items: center;
+        width: 90%;
     }
 
     article#megawb-text {
@@ -1011,12 +1014,11 @@ h2#megawb-bugs-header {
     }
 
     h1#megawb {
-        text-shadow: 8px 8px 1px black;
+        text-shadow: 8px 8px 1px var(--shadow-color);
         font-size: 250px;
         margin-top: 0%;
         position: relative;
-        align-self: flex-end;
-        left: 10%;
+        left: 17%;
     }
 
     .column#megawb-bugs {

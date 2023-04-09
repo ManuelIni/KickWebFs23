@@ -54,34 +54,57 @@
 
 /* disc */
 
+.scroller {
+    width: 100vw;
+    position: relative;
+}
+
 .disc {
     margin-top: 38vh;
-    z-index: -100;
+    z-index: -300;
     position: absolute;
     width: 100px;
 }
 
+.logo {
+    display: none;
+    margin-top: 10vh;
+    z-index: -300;
+    position: absolute;
+    width: 200px;
+    animation: 15s linear 0s infinite normal forwards running disc;
+}
+
 @media screen and (min-width: 769px) {
+    .scroller {
+        margin-bottom: 10%;
+    }
     .disc {
         margin-top: 3vh;
         width: 200px;
     }
+
+    .logo {
+        display: block;
+        margin-top: 3vh;
+        width: 400px;
+        margin-left: -30vw;
+    }
 }
 
-.disc#first {
+#first {
     animation: 15s linear 0s infinite normal forwards running disc;
 }
 
-.disc#second {
+#second {
     animation: 15s linear 5s infinite normal forwards running disc;
     left:-30vw;
 }
 
-.disc#third {
+#third {
     animation: 15s linear 10s infinite normal forwards running disc;
     left:-30vw;
 }
-
 
 @keyframes disc {
     from {
