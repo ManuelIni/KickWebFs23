@@ -467,7 +467,9 @@ CUSTREQ
 
 #green {
     background-color: #00a34a;
-    height: fit-content
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
 }
 
 #wordseeker {
@@ -549,9 +551,7 @@ article.startup {
 
 #loadWorkbench {
     position: relative;
-    left: -50%;
-    width: 100vw;
-    margin-top: 10%;
+    padding: 0%;
 }
 
 
@@ -622,6 +622,7 @@ article.musicbox {
     }
 
     #green {
+        flex-direction: row;
         justify-content: flex-start;
         position: relative;
         left: 20%;
@@ -681,10 +682,9 @@ article.musicbox {
     }
 
     #loadWorkbench {
-        padding-top: 40%;
-        width: 300%;
+        padding-top: 5%;
+        width: 200%;
         left: 0;
-
     }
 
     h1.startup {
