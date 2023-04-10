@@ -330,7 +330,7 @@ h1 {
 
     text-shadow: 4px 4px 1px var(--shadow-color);
 
-    animation: 1s linear 1s infinite normal forwards running header_color_switch;
+    animation: 1s steps(2, end) 1s infinite normal forwards running header_color_switch;
 }
 
 h1::after {
@@ -783,7 +783,8 @@ h1#sysheader {
 }
 
 .column.controls {
-    background-color: #f4692b;
+    background-color: rgb(255, 0, 93);
+    background-image: repeating-linear-gradient(#f4692b, rgba(0,0,0,0)), url(gradient/gradient.svg);
     color: white;
     border: 2px solid black;
 }

@@ -45,11 +45,10 @@
         color: var(--color-1);
         --shadow-color: var(--color-2);
     }
-    100% {
+    99% {
         color: var(--color-2);
         --shadow-color: var(--color-1);
     }
-
 }
 
 /* disc */
@@ -60,7 +59,7 @@
 }
 
 .disc {
-    margin-top: 38vh;
+    margin-top: 10vh;
     z-index: -300;
     position: absolute;
     width: 100px;
