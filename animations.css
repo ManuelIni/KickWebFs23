@@ -2,39 +2,28 @@
 
 @keyframes intro_mobile_left {
     from {
-        left:0;
+        transform: translate(0vw);
     }
     to {
-        left: -42vw;
+        transform: translate(-42vw, 0);
     }
 }
 
 @keyframes intro_mobile_right {
     from {
-        right:0;
+        transform: translate(0vw);
     }
     to {
-        right: -42vw;
+        transform: translate(42vw, 0);
     }
 }
 
 @keyframes intro_desktop {
     from {
-        top:0;
+        transform: translate(0vw);
     }
     to {
-        top: -92vh;
-    }
-}
-
-/* hover */
-
-@keyframes nav_hover_left {
-    from {
-        left: -42vw;
-    }
-    to {
-        left: 0vw;
+        transform: translate(0vw, -90vh);
     }
 }
 

@@ -12,6 +12,7 @@ menu
 
 nav {
     position: fixed;
+    left: -1vw;
     top: 0vh;
 
     display: flex;
@@ -19,7 +20,7 @@ nav {
     flex-wrap: wrap;
     gap: 0;
 
-    width: 100vw;
+    width: 102vw;
     height: 0vh;
 
     margin: 0 0% 6vh 0%;
@@ -70,33 +71,37 @@ nav {
 /* intro */
 
 
-.introAnimation#D, .introAnimation#S {
+.introAnimation#D,
+.introAnimation#S {
     animation: 1s ease-in-out 1s 1 normal forwards paused intro_mobile_left;
 }
 
-.introAnimation#I, .introAnimation#C {
+.introAnimation#I,
+.introAnimation#C {
     animation: 1s ease-in-out 1s 1 normal forwards paused intro_mobile_right;
 }
 
 /* hover */
 
-.hoverAnimation#D, .hoverAnimation#S {
-    transition: left 1s;
-    left: -42vw;
+.hoverAnimation#D,
+.hoverAnimation#S {
+    transition: all 1s;
+    transform: translate(-42vw, 0);
 }
 
-.hoverAnimation#D:hover, .hoverAnimation#S:hover {
-    left: 0vw;
+.hoverAnimation#D:hover,
+.hoverAnimation#S:hover,
+.hoverAnimation#I:hover,
+.hoverAnimation#C:hover {
+    transform: translate(0vw, 0);
 }
 
-.hoverAnimation#I, .hoverAnimation#C {
-    transition: right 1s;
-    right: -42vw
+.hoverAnimation#I,
+.hoverAnimation#C {
+    transition: all 1s;
+    transform: translate(42vw, 0);
 }
 
-.hoverAnimation#I:hover, .hoverAnimation#C:hover {
-    right: 0vw
-}
 
 
 
@@ -158,24 +163,24 @@ nav {
 
     .letterBox#D {
         left: 0;
-        transition: top 1s;
+        transition: all 1s;
     }
 
     .letterBox#I {
         right: 0;
-        transition: top 1s;
+        transition: all 1s;
     }
 
     .letterBox#S {
         background-color: #f8e006;
         left: 0;
-        transition: top 1s;
+        transition: all 1s;
     }
 
     .letterBox#C {
         background-color: #ec3c10;
         left: 0;
-        transition: top 1s;
+        transition: all 1s;
     }
 
     .letter {
@@ -189,24 +194,24 @@ nav {
 
     .letter#C {
         color: #f8e006;
-    }   
+    }
 
-/* intro */
+    /* intro */
 
 
-.introAnimation {
-    animation: 1s ease-in-out 1s 1 normal forwards paused intro_desktop;
-}
+    .introAnimation {
+        animation: 1s ease-in-out 1s 1 normal forwards paused intro_desktop;
+    }
 
-/* hover */
+    /* hover */
 
-.hoverAnimation {
-    top: -90vh;
-}
+    .hoverAnimation#D, .hoverAnimation#I, .hoverAnimation#S, .hoverAnimation#C {
+        transform: translate(0, -90vh);
+    }
 
-.hoverAnimation:hover {
-    top: 0vh;
-}
+    .hoverAnimation:hover {
+        transform: translate(0, 0vw);
+    }
 
 }
 
@@ -255,7 +260,7 @@ body:before {
 
     cursor: pointer;
     pointer-events: none;
-    
+
 }
 
 
@@ -448,6 +453,7 @@ CUSTREQ
 }
 
 #rosa1 {
+    content-visibility: auto;
     background: #e65789;
     border-style: solid;
     border-color: black black rgb(0, 0, 0, 0) rgb(0, 0, 0, 0);
@@ -468,6 +474,7 @@ CUSTREQ
 }
 
 #green {
+    content-visibility: auto;
     background-color: #00a34a;
     height: fit-content;
     align-items: center;
@@ -554,6 +561,7 @@ article.startup {
 #loadWorkbench {
     margin-top: 10%;
     margin-bottom: 10%;
+    position: relative;
     padding: 0%;
 }
 
@@ -685,7 +693,6 @@ article.musicbox {
     }
 
     #loadWorkbench {
-        position: relative;
         padding-top: 5%;
         width: 200%;
         left: -8vw;
