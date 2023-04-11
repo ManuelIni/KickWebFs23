@@ -63,7 +63,7 @@ function getSessionStorage(key) {
 /* lazy loading images */
 
 document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages = document.querySelectorAll("img.lazy");    
+    var lazyloadImages = document.querySelectorAll(".lazy");    
     var lazyloadThrottleTimeout;
     
     function lazyload () {
